@@ -10,7 +10,7 @@
 html,
 body {
     height: 100%;
-    background-color: bisque;
+    background-color: #d0d0d0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #fff;
     font-size: 16px;
@@ -48,7 +48,7 @@ body {
 
 .headerPanel{
     grid-area: headerPanel;
-    background: purple;
+    background: #72ca1c;
     display: grid;
     grid-template: 1fr / 1fr minmax(auto, 400px) minmax(auto, 600px) minmax(auto, 400px) 1fr;
     /*justify-content: space-between;*/
@@ -104,18 +104,13 @@ body {
     /*background: #282c34;*/
     position: relative;
     margin: 5%;
-    /*padding: 15px;*/
-
 }
 
 .headerLogo img {
     position: absolute;
     height: 100%;
     width: 100%;
-    /*top: 0;*/
-    /*left: 0;*/
-    border-radius: 50%;
-    object-fit: cover;
+    object-fit: scale-down;
 }
 
 /*Header headerLinkMenu styles*/
@@ -132,19 +127,21 @@ body {
 }
 
 .headerLinkMenu a {
+    font-weight: bold;
     text-decoration: none;
     line-height: 250%;
     padding: 0 10px 0 10px;
 }
 .headerLinkMenu a:hover{
-    color: darkgoldenrod;
+    color: black;
 }
 
 .activeLink {
-    background: purple;
+    background: #72ca1c;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    color: white;
+    color: black;
+    font-weight: bold;
 }
 
 /*Header headerSearch styles*/
@@ -185,7 +182,7 @@ body {
     -webkit-appearance: none;
 }
 .inputButton:hover {
-    background: purple;
+    background: #72ca1c;
 }
 .inputButton img {
     width: 20px;
@@ -209,6 +206,7 @@ body {
 .headerNavAccount img {
     height: 100%;
     width: 100%;
+    mix-blend-mode: overlay;
 }
 
 .headerNavAccount a:hover {
@@ -218,6 +216,7 @@ body {
 
 .activeNavAccount {
     color: red;
+    mix-blend-mode: darken;
 }
 
 /*Header headerNavProducts styles*/
@@ -235,10 +234,12 @@ body {
     justify-items: center;
     align-items: center;
     text-decoration: none;
-    color: white;
+
 }
 .navProduct{
-    background: rebeccapurple;
+    background: #27b8da;
+    color: #6f6f6f;
+    font-weight: bold;
 }
 .startLink {
     border-bottom-left-radius: 25px;
@@ -255,20 +256,82 @@ body {
     border-top-right-radius: 25px;
 }
 .activeNavProducts{
-    background: purple;
-    color: white;
+    background: #72ca1c;
+    color: midnightblue;
+
 }
 
 /*Main styles*/
 
 .main{
-    background: greenyellow;
+    background: #d0d0d0;
     grid-area: main;
+    display: grid;
+    grid-template: 1fr/ 1fr minmax(auto, 1400px) 1fr;
 }
+.mainSection{
+    margin: 40px 0;
+    background: #27b8da;
+    grid-column: 2/3;
+}
+
+/*section {*/
+/*    height: 200px;*/
+/*    position: relative;*/
+/*}*/
+
+/*section::before{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: blue;*/
+/*    mix-blend-mode: hue;*/
+/*}*/
+
+img{
+
+
+}
+
 
 /*Footer styles*/
 
 .footer{
-    background: brown;
+    background: #72ca1c;
     grid-area: footer;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 175px) minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 175px) 1fr
+}
+
+.footerLogo{
+    grid-column: 2 / 3;
+    position: relative;
+    margin: 5%;
+}
+
+.footerLogo img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+
+.footerBlock{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-auto-rows: min-content;
+}
+.footerCopy{
+    justify-self: center;
+    align-self: center;
+}
+
+.activeLinkFooter{
+    font-weight: bold;
+    color: black;
 }
