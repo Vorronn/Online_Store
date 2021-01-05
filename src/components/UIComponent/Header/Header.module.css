@@ -1,0 +1,230 @@
+/*Header styles*/
+
+.header{
+    /*background: brown;*/
+    grid-area: header;
+    display: grid;
+    grid-template: 20% 15% 45% 20% / 1fr minmax(auto, 300px) minmax(auto, 800px) minmax(auto, 300px) 1fr;
+    grid-template-areas:
+            "headerPanel headerPanel headerPanel headerPanel headerPanel"
+            ". headerLogo linkMenu linkMenu ."
+            ". headerLogo search navAccount ."
+            ". navProducts navProducts navProducts ." ;
+}
+
+/*Header headerPanel styles */
+
+.headerPanel{
+    grid-area: headerPanel;
+    background: #72ca1c;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 400px) minmax(auto, 600px) minmax(auto, 400px) 1fr;
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+    /*justify-items: center;*/
+}
+
+.geolocation{
+    grid-column: 2 / 3;
+    display: grid;
+    justify-content: start;
+    align-content: center;
+}
+.communication{
+    grid-column: 3 / 4;
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.communication p{
+    line-height: 150%;
+    max-width: 90px;
+    font-size: 10px;
+    padding-right: 10px;
+    border-right: 1px solid greenyellow;
+}
+
+.communication span{
+    padding: 10px;
+}
+
+.loginButton{
+    grid-column: 4 / 5;
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-items: center;
+}
+.loginButton button{
+    margin-left: 10px;
+    height: 25px;
+    width: 70px;
+    border-radius: 5px;
+}
+
+/*Header headerLogo styles*/
+
+.headerLogo{
+    grid-area: headerLogo;
+    /*background: #282c34;*/
+    position: relative;
+    margin: 5%;
+}
+
+.headerLogo img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+/*Header headerLinkMenu styles*/
+
+.headerLinkMenu{
+    grid-area: linkMenu;
+    /*background: aquamarine;*/
+    display: grid;
+    grid-template-rows: 100%;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.headerLinkMenu a {
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 250%;
+    padding: 0 10px 0 10px;
+}
+.headerLinkMenu a:hover{
+    color: black;
+}
+
+.activeLink {
+    background: #72ca1c;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+/*Header headerSearch styles*/
+
+.headerSearch{
+    grid-area: search;
+    /*background: red;*/
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.inputForm {
+    background: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    display:grid;
+    grid-template: 1fr / 20px minmax(auto, 740px) 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+.inputSearch {
+    grid-column: 2 / 3;
+    height: 30px;
+    width: 100%;
+    outline: none;
+    -webkit-appearance: none;
+}
+.inputButton {
+    background: white;
+    grid-column: 3 / 4;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    -webkit-appearance: none;
+}
+.inputButton:hover {
+    background: #72ca1c;
+}
+.inputButton img {
+    width: 20px;
+    height: 20px;
+}
+
+/*Header headerNavAccount styles*/
+
+.headerNavAccount{
+    grid-area: navAccount;
+    /*background: burlywood;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.headerNavAccount a {
+    height: 50px;
+    width: 50px;
+}
+.headerNavAccount img {
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: overlay;
+}
+
+.headerNavAccount a:hover {
+    height: 70px;
+    width: 70px;
+}
+
+.activeNavAccount {
+    color: red;
+    mix-blend-mode: darken;
+}
+
+/*Header headerNavProducts styles*/
+
+.headerNavProducts{
+    grid-area: navProducts;
+
+    display: grid;
+    grid-auto-flow: column;
+}
+.headerNavProducts a{
+    display:grid;
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+.navProduct{
+    background: #27b8da;
+    color: #6f6f6f;
+    font-weight: bold;
+}
+.startLink {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-right: 1px solid bisque;
+}
+.middleLink {
+    border-right: 1px solid bisque;
+    border-left: 1px solid bisque;
+}
+.endLink {
+    border-left: 1px solid bisque;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.activeNavProducts{
+    background: #72ca1c;
+    color: midnightblue;
+
+}

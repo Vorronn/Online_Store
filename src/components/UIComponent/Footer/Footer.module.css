@@ -1,0 +1,38 @@
+/*Footer styles*/
+
+.footer{
+    background: #72ca1c;
+    grid-area: footer;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 175px) minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 175px) 1fr
+}
+
+.footerLogo{
+    grid-column: 2 / 3;
+    position: relative;
+    margin: 5%;
+}
+
+.footerLogo img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+
+.footerBlock{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-auto-rows: min-content;
+}
+.footerCopy{
+    justify-self: center;
+    align-self: center;
+}
+
+.activeLinkFooter{
+    font-weight: bold;
+    color: black;
+}
