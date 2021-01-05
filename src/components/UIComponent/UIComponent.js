@@ -142,30 +142,32 @@ const UIComponent = (props) => {
                         </div>
                     </section>
                     <section className={styles.filter}>
-                        <div className={styles.price}>
-                            <h4 className={styles.priceName}>Price</h4>
-                            <input type={"text"} placeholder={"min price"}/>
-                            <input type={"text"} placeholder={"max price"}/>
+                        <div className={styles.filterPanel}>
+                            <div className={styles.price}>
+                                <h4 className={styles.priceName}>Price</h4>
+                                <input type={"text"} placeholder={"min price"}/>
+                                <input type={"text"} placeholder={"max price"}/>
+                            </div>
+                            <div className={styles.brand}>
+                                <h4 className={styles.brandName}>Brand</h4>
+                                <div className={styles.brandItem}>
+                                    <input type={"checkbox"} /> Samsung
+                                </div>
+                                <div className={styles.brandItem}>
+                                    <input type={"checkbox"} /> Iphone
+                                </div>
+                                <div className={styles.brandItem}>
+                                    <input type={"checkbox"} /> Honor
+                                </div>
+                                <div className={styles.brandItem}>
+                                    <input type={"checkbox"} /> ZTE
+                                </div>
+                                <div className={styles.brandItem}>
+                                    <input type={"checkbox"} /> Xiaomi
+                                </div>
+                            </div>
+                            <button className={styles.filterSubmit}>Submit</button>
                         </div>
-                        <div className={styles.brand}>
-                            <h4 className={styles.brandName}>Brand</h4>
-                            <div className={styles.brandItem}>
-                                <input type={"checkbox"} /> Samsung
-                            </div>
-                            <div className={styles.brandItem}>
-                                <input type={"checkbox"} /> Iphone
-                            </div>
-                            <div className={styles.brandItem}>
-                                <input type={"checkbox"} /> Honor
-                            </div>
-                            <div className={styles.brandItem}>
-                                <input type={"checkbox"} /> ZTE
-                            </div>
-                            <div className={styles.brandItem}>
-                                <input type={"checkbox"} /> Xiaomi
-                            </div>
-                        </div>
-                        <button className={styles.filterSubmit}>Submit</button>
                     </section>
                     <div className={styles.selectFilterBottom}>
                         <div className={styles.navigation}>
