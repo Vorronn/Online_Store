@@ -1,0 +1,30 @@
+/*Header headerLinkMenu styles*/
+
+.headerLinkMenu{
+    grid-area: linkMenu;
+    /*background: aquamarine;*/
+    display: grid;
+    grid-template-rows: 100%;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.headerLinkMenu a {
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 250%;
+    padding: 0 10px 0 10px;
+}
+.headerLinkMenu a:hover{
+    color: black;
+}
+
+.activeLink {
+    background: #72ca1c;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: black;
+    font-weight: bold;
+}

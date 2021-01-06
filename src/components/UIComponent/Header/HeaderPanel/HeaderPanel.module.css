@@ -1,0 +1,50 @@
+/*Header headerPanel styles */
+
+.headerPanel{
+    grid-area: headerPanel;
+    background: #72ca1c;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 400px) minmax(auto, 600px) minmax(auto, 400px) 1fr;
+}
+
+.geolocation{
+    margin: 0 10px;
+    grid-column: 2 / 3;
+    display: grid;
+    justify-content: start;
+    align-content: center;
+}
+.communication{
+    grid-column: 3 / 4;
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.communication p{
+    line-height: 150%;
+    max-width: 90px;
+    font-size: 10px;
+    padding-right: 10px;
+    border-right: 1px solid greenyellow;
+}
+
+.communication span{
+    padding: 10px;
+}
+
+.loginButton{
+    grid-column: 4 / 5;
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-items: center;
+}
+.loginButton button{
+    margin: 10px;
+    height: 25px;
+    width: 70px;
+    border-radius: 5px;
+}

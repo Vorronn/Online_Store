@@ -1,0 +1,44 @@
+/*Header headerSearch styles*/
+
+.headerSearch{
+    grid-area: search;
+    /*background: red;*/
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.inputForm {
+    background: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    display:grid;
+    grid-template: 1fr / 20px minmax(auto, 740px) 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+.inputSearch {
+    grid-column: 2 / 3;
+    height: 30px;
+    width: 100%;
+    outline: none;
+    -webkit-appearance: none;
+}
+.inputButton {
+    background: white;
+    grid-column: 3 / 4;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    -webkit-appearance: none;
+}
+.inputButton:hover {
+    background: #72ca1c;
+}
+.inputButton img {
+    width: 20px;
+    height: 20px;
+}

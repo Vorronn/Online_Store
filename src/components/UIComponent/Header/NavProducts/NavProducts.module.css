@@ -1,0 +1,40 @@
+/*Header headerNavProducts styles*/
+
+.headerNavProducts{
+    grid-area: navProducts;
+    display: grid;
+    grid-auto-flow: column;
+}
+.headerNavProducts a{
+    display:grid;
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+.navProduct{
+    background: #27b8da;
+    color: #6f6f6f;
+    font-weight: bold;
+}
+.startLink {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-right: 1px solid bisque;
+}
+.middleLink {
+    border-right: 1px solid bisque;
+    border-left: 1px solid bisque;
+}
+.endLink {
+    border-left: 1px solid bisque;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.activeNavProducts{
+    background: #72ca1c;
+    color: midnightblue;
+
+}

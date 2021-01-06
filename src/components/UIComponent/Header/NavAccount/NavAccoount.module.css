@@ -1,0 +1,29 @@
+/*Header headerNavAccount styles*/
+
+.headerNavAccount{
+    grid-area: navAccount;
+    /*background: burlywood;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.headerNavAccount a {
+    height: 50px;
+    width: 50px;
+}
+.headerNavAccount img {
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: overlay;
+}
+
+.headerNavAccount a:hover {
+    height: 70px;
+    width: 70px;
+}
+
+.activeNavAccount {
+    color: red;
+    mix-blend-mode: darken;
+}
