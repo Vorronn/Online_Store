@@ -10,7 +10,7 @@ import NavProducts from "./NavProducts/NavProducts";
 const Header = (props) => {
     return(
         <header className={styles.header}>
-            <HeaderPanel />
+            <HeaderPanel {...props} />
             <Logo />
             <NavMenu />
             <SearchPanel />

@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./HeaderPanel.module.css";
 
 const HeaderPanel = (props) => {
+
+    const [isOpenLoginForm, setIsOpenLoginForm] = useState(false);
+    const [isOpenSingUpForm, setIsOpenSingUpForm] = useState(false);
+
     return (
         <div className={styles.headerPanel}>
             <div className={styles.geolocation}>sity.Vitebsk</div>
@@ -10,9 +14,19 @@ const HeaderPanel = (props) => {
                 <span>+375297777777</span>
             </div>
             <div className={styles.loginButton}>
-                <button>log in</button>
-                <button>sing up</button>
+                {!props.isAuth
+                    ? <>
+                        <button onClick={()=>{setIsOpenLoginForm(true)}}>log in</button>
+                        <button onClick={()=>{setIsOpenSingUpForm(true)}}>sing up</button>
+                    </>
+                    : <>
+                        <div>{props.firstName + " " +props.lastName}</div>
+                        <button>Log out</button>
+                    </>
+                }
             </div>
+            {isOpenLoginForm && <div>Login</div>}
+            {isOpenSingUpForm && <div>Ok</div>}
         </div>
     )
 }
