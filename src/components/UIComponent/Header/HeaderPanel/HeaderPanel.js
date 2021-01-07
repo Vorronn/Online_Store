@@ -1,10 +1,18 @@
 import React, {useState} from "react";
 import styles from "./HeaderPanel.module.css";
+import Login from "../../../Common/Login/Login";
 
 const HeaderPanel = (props) => {
 
     const [isOpenLoginForm, setIsOpenLoginForm] = useState(false);
     const [isOpenSingUpForm, setIsOpenSingUpForm] = useState(false);
+    const closeWindow = () => {
+        setIsOpenLoginForm(false);
+    }
+
+    const onSubmit = (fromDate) => {
+        console.log(fromDate);
+    }
 
     return (
         <div className={styles.headerPanel}>
@@ -25,7 +33,7 @@ const HeaderPanel = (props) => {
                     </>
                 }
             </div>
-            {isOpenLoginForm && <div>Login</div>}
+            {isOpenLoginForm && <Login closeWindow={closeWindow} onSubmit={onSubmit}/>}
             {isOpenSingUpForm && <div>Ok</div>}
         </div>
     )

@@ -1,0 +1,54 @@
+.container {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 244, 244, 0.5);
+}
+.formContainer{
+    display: grid;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+    background: skyblue;
+    grid-template-rows: 50px 1fr;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.nameForm {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+}
+
+.nameForm h3 {
+    margin: 13px 10px;
+    font-size: 24px;
+}
+
+.nameForm button {
+    display: grid;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    outline: none;
+}
+.nameForm button:hover {
+    display: grid;
+    height: 34px;
+    width: 34px;
+    margin: 8px;
+    border-radius: 50%;
+}
+
+.nameForm button img {
+    justify-self: center;
+    align-self: center;
+    height: 30px;
+    width: 30px;
+}

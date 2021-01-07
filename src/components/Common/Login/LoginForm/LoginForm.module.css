@@ -1,0 +1,56 @@
+.loginForm{
+    display: grid;
+    grid-template-rows: 35px 35px 35px 35px 40px 1fr;
+    align-items: center;
+    border-top: 1px solid black;
+}
+.nameField{
+    font-size: 18px;
+    margin: 0 10px;
+}
+.field{
+    margin: 0 10px;
+
+}
+.field input{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 18px;
+}
+.fieldCheckbox{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    width: 100%;
+}
+.fieldCheckbox input {
+    margin: 2px 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+}
+.buttonBlock{
+    border-top: 1px solid black;
+    padding-top: 10px;
+    display: grid;
+    grid-auto-flow: column;
+}
+.buttonBlock button {
+    margin: 0 10px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.submit:hover{
+    font-weight: bold;
+    background: green;
+}
+
+.close:hover{
+    font-weight: bold;
+    background: firebrick;
+}
