@@ -14,7 +14,9 @@ const mapStateToProps = (state) => {
     return {
         isAuth : state.auth.isAuth,
         firstName : state.auth.firstName,
-        lastName : state.auth.lastName
+        lastName : state.auth.lastName,
+        basketCount : state.basket.basketCount,
+        favoriteCount : state.favorite.favoriteCount
     }
 }
 

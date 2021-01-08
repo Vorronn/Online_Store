@@ -7,23 +7,48 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
+
 }
 .headerNavAccount a {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+    position:relative;
 }
 .headerNavAccount img {
     height: 100%;
     width: 100%;
     mix-blend-mode: overlay;
 }
+.headerNavAccount div {
+
+    display: grid;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    font-size: 16px;
+    border-radius: 10px;
+    background: #363636;
+    color: #b2b2b2;
+    border: 1px solid #f36f28;
+    box-shadow: 0 0 5px #f36f28;
+
+}
 
 .headerNavAccount a:hover {
-    height: 70px;
-    width: 70px;
+    height: 45px;
+    width: 45px;
 }
 
 .activeNavAccount {
-    color: red;
+    color: black;
     mix-blend-mode: darken;
 }
+/*.counter{*/
+/*    padding: 7px;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    background: rgba(243, 111, 40, 0.3);;*/
+/*    border-radius: 50%;*/
+/*}*/

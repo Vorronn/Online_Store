@@ -9,6 +9,7 @@
     grid-auto-flow: column;
     justify-content: end;
     align-items: center;
+
 }
 
 .headerLinkMenu a {
@@ -16,15 +17,24 @@
     text-decoration: none;
     line-height: 250%;
     padding: 0 10px 0 10px;
+    background: #363636;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .headerLinkMenu a:hover{
-    color: black;
+    color: white;
 }
 
 .activeLink {
-    background: #72ca1c;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    color: black;
+    padding-bottom: 5px;
+    color: #f36f28;
     font-weight: bold;
+    border-bottom: 1px solid #f36f28;
+    border-right: 1px solid #f36f28;
+    border-left: 1px solid #f36f28;
+    box-shadow: 0 10px 10px #f36f28;
+    transition: all ease 300ms;
+    z-index: 2;
+
 }
+

@@ -1,13 +1,17 @@
 /*Header headerPanel styles */
 
 .headerPanel{
+    border-bottom: 1px solid #f36f28;
+    box-shadow: 0 0 15px #f36f28;
     grid-area: headerPanel;
-    background: #72ca1c;
+    background: #363636;
     display: grid;
     grid-template: 1fr / 1fr minmax(auto, 400px) minmax(auto, 600px) minmax(auto, 400px) 1fr;
+    z-index: 1;
 }
 
 .geolocation{
+    color: #b2b2b2;
     margin: 0 10px;
     grid-column: 2 / 3;
     display: grid;
@@ -23,14 +27,16 @@
     align-items: center;
 }
 .communication p{
+    color: #b2b2b2;
     line-height: 150%;
     max-width: 90px;
     font-size: 10px;
     padding-right: 10px;
-    border-right: 1px solid greenyellow;
+    border-right: 3px solid #f36f28;
 }
 
 .communication span{
+    color: #b2b2b2;
     padding: 10px;
 }
 
@@ -47,4 +53,33 @@
     height: 25px;
     width: 70px;
     border-radius: 5px;
+    background: #030303;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #f36f28;
+    outline: none;
+    overflow: hidden;
+
 }
+.loginButton button:hover{
+    color: #f36f28;
+    box-shadow: 0 0 10px #f36f28;
+    transition: all ease-in-out 300ms;
+
+}
+.fullName{
+    color: white;
+    font-weight: bold;
+}
+
+/*main{*/
+/*    color: #030303;*/
+/*    color: #363636;*/
+/*    color: #4e6a5b;*/
+/*    color: #8c9e78;*/
+/*    color: #b2b2b2;*/
+/*    color: #f57e43;*/
+/*    color: #f36f28;*/
+
+/*}*/

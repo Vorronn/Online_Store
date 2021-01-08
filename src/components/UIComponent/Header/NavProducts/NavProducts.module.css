@@ -14,27 +14,33 @@
     text-decoration: none;
 
 }
+.headerNavProducts a:hover{
+    color: white;
+    transition: all ease-in-out 300ms;
+}
 .navProduct{
-    background: #27b8da;
-    color: #6f6f6f;
+    background: #363636;
+    color: #b2b2b2;
     font-weight: bold;
 }
 .startLink {
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-    border-right: 1px solid bisque;
+    border-right: 1px solid #b2b2b2;
 }
 .middleLink {
-    border-right: 1px solid bisque;
-    border-left: 1px solid bisque;
+    border-right: 1px solid #b2b2b2;
+    border-left: 1px solid #b2b2b2;
 }
 .endLink {
-    border-left: 1px solid bisque;
+    border-left: 1px solid #b2b2b2;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
 }
 .activeNavProducts{
-    background: #72ca1c;
-    color: midnightblue;
-
+    background: #030303;
+    color: #f36f28;
+    box-shadow: 0 0 20px #f36f28;
+    transition: all ease-in-out 300ms;
+    z-index: 2;
 }

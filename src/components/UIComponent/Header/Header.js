@@ -14,7 +14,7 @@ const Header = (props) => {
             <Logo />
             <NavMenu />
             <SearchPanel />
-            <NavAccount />
+            <NavAccount {...props}/>
             <NavProducts />
         </header>
     )

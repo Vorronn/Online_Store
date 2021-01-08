@@ -1,7 +1,7 @@
 /*Footer styles*/
 
 .footer{
-    background: #72ca1c;
+    background: #363636;
     grid-area: footer;
     display: grid;
     grid-template: 1fr / 1fr minmax(auto, 175px) minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 175px) 1fr
@@ -34,5 +34,5 @@
 
 .activeLinkFooter{
     font-weight: bold;
-    color: black;
+    color: white;
 }

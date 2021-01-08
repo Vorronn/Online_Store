@@ -1,5 +1,5 @@
 const initialState = {
-    isAuth: false,
+    isAuth: true,
     firstName: "Sergey",
     lastName: "Sapelko",
     Email: "begin@yandex.ru",

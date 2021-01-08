@@ -28,12 +28,12 @@ const HeaderPanel = (props) => {
             <div className={styles.loginButton}>
                 {!props.isAuth
                     ? <>
-                        <button onClick={()=>{setIsOpenLoginForm(true)}}>log in</button>
-                        <button onClick={()=>{setIsOpenSingUpForm(true)}}>sing up</button>
+                        <button onClick={()=>{setIsOpenLoginForm(true)}}>login</button>
+                        <button onClick={()=>{setIsOpenSingUpForm(true)}}>sign up</button>
                     </>
                     : <>
-                        <div>{props.firstName + " " +props.lastName}</div>
-                        <button>Log out</button>
+                        <div className={styles.fullName}>{props.firstName + " " +props.lastName}</div>
+                        <button>Logout</button>
                     </>
                 }
             </div>
