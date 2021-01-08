@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styles from "./HeaderPanel.module.css";
 import Login from "../../../Common/Login/Login";
+import SignUp from "../../../Common/SignUp/SignUp";
 
 const HeaderPanel = (props) => {
 
@@ -8,11 +9,14 @@ const HeaderPanel = (props) => {
     const [isOpenSingUpForm, setIsOpenSingUpForm] = useState(false);
     const closeWindow = () => {
         setIsOpenLoginForm(false);
+        setIsOpenSingUpForm(false);
     }
 
     const onSubmit = (fromDate) => {
         console.log(fromDate);
+        closeWindow();
     }
+
 
     return (
         <div className={styles.headerPanel}>
@@ -34,7 +38,7 @@ const HeaderPanel = (props) => {
                 }
             </div>
             {isOpenLoginForm && <Login closeWindow={closeWindow} onSubmit={onSubmit}/>}
-            {isOpenSingUpForm && <div>Ok</div>}
+            {isOpenSingUpForm && <SignUp closeWindow={closeWindow} onSubmit={onSubmit}/>}
         </div>
     )
 }
