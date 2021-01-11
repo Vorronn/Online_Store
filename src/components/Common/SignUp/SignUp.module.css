@@ -4,20 +4,21 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    background: rgba(0, 244, 244, 0.5);
+    background: rgba(3, 3, 3, 0.7);
 }
 .formContainerSignUp {
     display: grid;
     position: relative;
-    height: 500px;
+    height: 480px;
     width: 400px;
     top: 50%;
     left: 50%;
-    margin: -250px 0 0 -200px;
-    background: skyblue;
+    margin: -240px 0 0 -200px;
+    background: #363636;
     grid-template-rows: 50px 1fr;
     border-radius: 15px;
-    border: 1px solid black;
+    border: 1px solid #f36f28;
+    box-shadow: 0 0 15px #f36f28;
 }
 
 .nameForm {
@@ -26,6 +27,7 @@
 }
 
 .nameForm h3 {
+    color: white;
     margin: 13px 10px;
     font-size: 24px;
 }
@@ -44,6 +46,8 @@
     width: 34px;
     margin: 8px;
     border-radius: 50%;
+    background: black;
+    box-shadow: 0 0 15px black;
 }
 
 .nameForm button img {
@@ -51,4 +55,5 @@
     align-self: center;
     height: 30px;
     width: 30px;
+    -webkit-filter: hue-rotate(35deg);
 }

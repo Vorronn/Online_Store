@@ -42,5 +42,5 @@
     color: #f36f28;
     box-shadow: 0 0 20px #f36f28;
     transition: all ease-in-out 300ms;
-    z-index: 2;
+    z-index: 0;
 }

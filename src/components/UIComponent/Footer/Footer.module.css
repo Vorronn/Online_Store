@@ -1,6 +1,9 @@
 /*Footer styles*/
 
 .footer{
+    border-top: 1px solid #f36f28;
+    box-shadow: 0 0 15px #f36f28;
+    color: white;
     background: #363636;
     grid-area: footer;
     display: grid;

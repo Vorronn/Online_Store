@@ -34,7 +34,7 @@
     border-left: 1px solid #f36f28;
     box-shadow: 0 10px 10px #f36f28;
     transition: all ease 300ms;
-    z-index: 2;
+    z-index: 0;
 
 }
 

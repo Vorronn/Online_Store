@@ -1,12 +1,12 @@
 .signUpForm{
     margin: 0 10px;
-    display:grid;
-    grid-auto-rows: auto;
-    grid-auto-flow: row;
+    display: grid;
+    grid-template-rows: 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px 1fr;
     align-items: center;
-    border-top: 1px solid black;
+    border-top: 1px solid #f36f28;
 }
 .nameField{
+    color: #b2b2b2;
     font-size: 18px;
     margin: 0 10px;
 }
@@ -23,7 +23,7 @@
 }
 .buttonBlock{
     padding-top: 10px;
-    border-top: 1px solid black;
+    border-top: 1px solid #f36f28;
     display: grid;
     grid-auto-flow: column;
 }
@@ -33,12 +33,19 @@
     outline: none;
     height: 30px;
     text-transform: uppercase;
+    background: #030303;
+    color: white;
+    border: 1px solid #f36f28;
 }
 .signUpButton:hover {
     font-weight: bold;
-    background: green;
+    color: #f36f28;
+    box-shadow: inset 0 0 10px #f36f28;
+    transition: all ease-in-out 300ms;
 }
 .closeButton:hover{
     font-weight: bold;
-    background: firebrick;
+    color: #f36f28;
+    box-shadow: inset 0 0 10px #f36f28;
+    transition: all ease-in-out 300ms;
 }

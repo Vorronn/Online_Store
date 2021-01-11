@@ -1,3 +1,5 @@
+const LOGOUT = "authReducer/LOGOUT";
+
 const initialState = {
     isAuth: true,
     firstName: "Sergey",
@@ -8,9 +10,20 @@ const initialState = {
 
 const authReducer = (state = initialState, action) => {
     switch (action.type) {
+        case LOGOUT:
+            return {
+                ...state,
+                isAuth: false
+            }
         default:
             return state;
     }
+}
+
+export const logOut = () => {
+    return(
+        {type: LOGOUT}
+    )
 }
 
 export default authReducer;

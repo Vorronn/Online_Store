@@ -17,6 +17,9 @@ const HeaderPanel = (props) => {
         closeWindow();
     }
 
+    const logOut = () => {
+        props.logOut();
+    }
 
     return (
         <div className={styles.headerPanel}>
@@ -33,7 +36,7 @@ const HeaderPanel = (props) => {
                     </>
                     : <>
                         <div className={styles.fullName}>{props.firstName + " " +props.lastName}</div>
-                        <button>Logout</button>
+                        <button onClick={logOut}>Logout</button>
                     </>
                 }
             </div>
