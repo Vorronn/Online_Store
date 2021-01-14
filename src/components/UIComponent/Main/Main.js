@@ -11,12 +11,14 @@ import Contacts from "./Contacts/Contacts";
 const Main = (props) => {
     return(
         <main className={styles.main}>
+            <div className={styles.mainContent}>
             <Route path={"/main"} render={() => <MainContent />}/>
             <Route path={"/payment"} render={() => <Payment />}/>
             <Route path={"/delivery"} render={() => <Delivery />}/>
             <Route path={"/bonuses"} render={() => <Bonuses />}/>
             <Route path={"/contacts"} render={() => <Contacts />}/>
             <Route path={"/mobile-phone"} render={() => <Products />}/>
+            </div>
         </main>
     )
 }

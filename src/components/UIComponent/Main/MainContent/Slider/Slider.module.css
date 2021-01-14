@@ -1,0 +1,11 @@
+.container {
+    width: 80%;
+    /*height: 80%;*/
+    margin: 30px auto;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

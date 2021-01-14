@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../Main.module.css";
+import styles from "./Products.module.css";
 import android from "../../../../assets/images/android.png";
 import iphone from "../../../../assets/images/iphone.png";
 
