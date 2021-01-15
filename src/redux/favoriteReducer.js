@@ -1,5 +1,5 @@
 const initialState = {
-    favoriteCount: 4
+    favoriteCount: 0
 }
 
 const favoriteReducer = (state = initialState, action) => {

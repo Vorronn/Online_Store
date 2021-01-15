@@ -7,12 +7,13 @@ import Payment from "./Payment/Payment";
 import Delivery from "./Delivery/Delivery";
 import Bonuses from "./Bonuses/Bonuses";
 import Contacts from "./Contacts/Contacts";
+import MainContentContainer from "./MainContent/MainContentContainer";
 
 const Main = (props) => {
     return(
         <main className={styles.main}>
             <div className={styles.mainContent}>
-            <Route path={"/main"} render={() => <MainContent />}/>
+            <Route path={"/main"} render={() => <MainContentContainer />}/>
             <Route path={"/payment"} render={() => <Payment />}/>
             <Route path={"/delivery"} render={() => <Delivery />}/>
             <Route path={"/bonuses"} render={() => <Bonuses />}/>

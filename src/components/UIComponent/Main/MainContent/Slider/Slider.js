@@ -22,13 +22,13 @@ const MainSlider = () => {
         <div className={styles.container}>
             <Slider {...settings}>
                 <div>
-                    <img src={slide_1} />
+                    <img src={slide_1} alt={""} />
                 </div>
                 <div>
-                    <img src={slide_2} />
+                    <img src={slide_2} alt={""} />
                 </div>
                 <div>
-                    <img src={slide_3} />
+                    <img src={slide_3} alt={""} />
                 </div>
             </Slider>
         </div>

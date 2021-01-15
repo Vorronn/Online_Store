@@ -1,0 +1,6 @@
+.productsWrapper{
+    display: grid;
+    grid-template: 1fr / repeat(3,350px);
+    grid-auto-flow: row;
+    gap: 20px;
+}

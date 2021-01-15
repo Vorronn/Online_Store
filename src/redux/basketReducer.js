@@ -1,5 +1,5 @@
 const initialState = {
-    basketCount: 10
+    basketCount: 0
 }
 
 const basketReducer = (state = initialState, action) =>{
