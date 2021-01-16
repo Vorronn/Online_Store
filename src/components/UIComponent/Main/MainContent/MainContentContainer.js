@@ -3,7 +3,6 @@ import MainContent from "./MainContent";
 import {connect} from "react-redux";
 
 const MainContentContainer = (props) => {
-    console.log(props)
     return (
         <div>
             <MainContent {...props}/>

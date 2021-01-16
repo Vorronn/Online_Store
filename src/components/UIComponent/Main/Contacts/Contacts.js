@@ -2,7 +2,7 @@ import React from "react";
 
 const Contacts = (props) => {
     return (
-        <div>Contacts content</div>
+        <div>This section is under development +++++Contacts content+++++</div>
     )
 }
 

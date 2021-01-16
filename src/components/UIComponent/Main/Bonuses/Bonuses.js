@@ -2,7 +2,7 @@ import React from "react";
 
 const Bonuses = (props) => {
     return (
-        <div>Bonuses content</div>
+        <div>This section is under development +++++Bonuses content+++++</div>
     )
 }
 

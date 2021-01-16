@@ -1,9 +1,15 @@
 import React from "react";
 import styles from "./Products.module.css";
-import android from "../../../../assets/images/android.png";
-import iphone from "../../../../assets/images/iphone.png";
+import Product from "./Product/Product";
 
 const Products = (props) => {
+
+    const products = props.products.map( p => (
+        (p.photo.android)
+            ? <Product key={p.id} name={p.name} description={p.description} photo={p.photo.android}/>
+            : <Product key={p.id} name={p.name} description={p.description} photo={p.photo.iphone}/>
+    ))
+
     return (
         <div className={styles.mainSection}>
             <h2 className={styles.productsTitle}>Mobile Phone</h2>
@@ -34,61 +40,7 @@ const Products = (props) => {
             </div>
             <section className={styles.products}>
                 <div className={styles.productItems}>
-                    <div className={styles.productItem}>
-                        <h3 className={styles.productName}>Samsung</h3>
-                        <div className={styles.productImage}>
-                            <img src={android} alt={"mobile Phone"} />
-                        </div>
-                        <div className={styles.productDescription}>This description product This description product This description product This description product</div>
-                        <div className={styles.productButtonGroup}>
-                            <button className={styles.productButtonBasket}>In basket</button>
-                            <button className={styles.productButtonFavorite}>In favorite</button>
-                        </div>
-                    </div>
-                    <div className={styles.productItem}>
-                        <h3 className={styles.productName}>Samsung</h3>
-                        <div className={styles.productImage}>
-                            <img src={iphone} alt={"mobile Phone"} />
-                        </div>
-                        <div className={styles.productDescription}>This description product</div>
-                        <div className={styles.productButtonGroup}>
-                            <button className={styles.productButtonBasket}>In basket</button>
-                            <button className={styles.productButtonFavorite}>In favorite</button>
-                        </div>
-                    </div>
-                    <div className={styles.productItem}>
-                        <h3 className={styles.productName}>Samsung</h3>
-                        <div className={styles.productImage}>
-                            <img src={android} alt={"mobile Phone"} />
-                        </div>
-                        <div className={styles.productDescription}>This description product</div>
-                        <div className={styles.productButtonGroup}>
-                            <button className={styles.productButtonBasket}>In basket</button>
-                            <button className={styles.productButtonFavorite}>In favorite</button>
-                        </div>
-                    </div>
-                    <div className={styles.productItem}>
-                        <h3 className={styles.productName}>Samsung</h3>
-                        <div className={styles.productImage}>
-                            <img src={android} alt={"mobile Phone"} />
-                        </div>
-                        <div className={styles.productDescription}>This description product</div>
-                        <div className={styles.productButtonGroup}>
-                            <button className={styles.productButtonBasket}>In basket</button>
-                            <button className={styles.productButtonFavorite}>In favorite</button>
-                        </div>
-                    </div>
-                    <div className={styles.productItem}>
-                        <h3 className={styles.productName}>Samsung</h3>
-                        <div className={styles.productImage}>
-                            <img src={android} alt={"mobile Phone"} />
-                        </div>
-                        <div className={styles.productDescription}>This description product</div>
-                        <div className={styles.productButtonGroup}>
-                            <button className={styles.productButtonBasket}>In basket</button>
-                            <button className={styles.productButtonFavorite}>In favorite</button>
-                        </div>
-                    </div>
+                    { products }
                 </div>
             </section>
             <section className={styles.filter}>
